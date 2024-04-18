@@ -1,0 +1,7 @@
+services:
+  front:
+    build: "./LaForum-Backend"
+  back:
+    build: "./LaForum-Frontend"
+  redis:
+    image: "redis:alpine"

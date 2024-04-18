@@ -1,0 +1,6 @@
+[submodule "LaForum-Backend"]
+	path = LaForum-Backend
+	url = https://github.com/LaPepega/LaForum-Backend
+[submodule "LaForum-Frontend"]
+	path = LaForum-Frontend
+	url = https://github.com/LaPepega/LaForum-Frontend

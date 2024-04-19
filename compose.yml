@@ -4,4 +4,4 @@ services:
   back:
     build: "./LaForum-Frontend"
   redis:
-    image: "redis:alpine"
+    build: "./Redis"

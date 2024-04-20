@@ -2,12 +2,18 @@ services:
   front:
     build: ./LaForum-Backend
     container_name: LaForum-Backend
+    env_file:
+      - ./LaForum-Frontend/.env
   back:
     build: ./LaForum-Frontend
     container_name: LaForum-Frontend
+    env_file:
+      - ./LaForum-Backend/.env
   redis:
     build: ./Redis
     container_name: LaForum-Redis
+    env_file:
+      - ./Redis/.env
     ports:
       - 6379:6379
     volumes:

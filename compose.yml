@@ -1,12 +1,14 @@
 services:
   front:
-    build: ./LaForum-Backend
-    container_name: LaForum-Backend
+    build: ./LaForum-Frontend
+    container_name: LaForum-Frontend
+    ports:
+      - 3000:3000
     env_file:
       - ./LaForum-Frontend/.env
   back:
-    build: ./LaForum-Frontend
-    container_name: LaForum-Frontend
+    build: ./LaForum-Backend
+    container_name: LaForum-Backend
     env_file:
       - ./LaForum-Backend/.env
   redis:
